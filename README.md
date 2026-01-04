@@ -10,3 +10,6 @@ The project demonstrates how traffic can be distributed across multiple network 
 
 VM Specifications: 
 To ensure a stable development environment we deployed a virtualized workstation using Oracle VirtualBox. The guest operating system is Ubuntu, configurated to provide the necessary computational resources to run Cisco Packet Tracer and Python automation scripts simultaneously without performance degradation.
+
+Network Topology Design:
+We have designed a diamond-shaped redundant topology to evaluate EIGRP's performance. The network consists of four Cisco 2911 routers and two end-user workstations. This specific layout was chosen to simulate a real-world enterprise environment where a Head Office (R1) connects to a Branch Office (R4) through two distinct service providers (R2 and R3). This architecture is ideal for demonstrating Successor and Feasible Successor selection, as well as testing both equal and unequal cost load balancing by modifying interface bandwidths.
