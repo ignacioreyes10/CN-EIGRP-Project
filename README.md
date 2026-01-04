@@ -6,5 +6,5 @@ The goal of this project is to implement a redundant routed network using the En
 
 The network topology is designed in Cisco Packet Tracer, while the routing configuration is applied automatically through a Python script. This approach reflects a NetDevOps methodology, where network configuration is managed through code instead of manual CLI commands.
 
-The project demonstrates equal-cost and unequal-cost load balancing, as well as network redundancy, showing how automation can simplify network management and reduce configuration errors.
+The project demonstrates how traffic can be distributed across multiple network paths and how the network continues to operate when one of the links fails, showing how automation can simplify network management and reduce configuration errors.
 
