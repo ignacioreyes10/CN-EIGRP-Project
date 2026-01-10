@@ -13,3 +13,6 @@ To ensure a stable development environment we deployed a virtualized workstation
 
 Network Topology Design:
 We have designed a diamond-shaped redundant topology to evaluate EIGRP's performance. The network consists of four Cisco 2911 routers and two end-user workstations. This specific layout was chosen to simulate a real-world enterprise environment where a Head Office (R1) connects to a Branch Office (R4) through two distinct service providers (R2 and R3). This architecture is ideal for demonstrating Successor and Feasible Successor selection, as well as testing both equal and unequal cost load balancing by modifying interface bandwidths.
+
+Interface Mapping and Verification:
+To ensure network consistency, we strictly followed a predefined port-mapping scheme. The core router (R1) distributes traffic through GigabitEthernet 0/1 to the upper path (R2) and through GigabitEthernet 0/2 to the lower path (R3). This physical segmentation is crucial for EIGRP to identify multiple valid paths to the destination network (192.168.40.0/24). All interfaces have been manually addressed and enabled, establishing the physical foundation for the dynamic routing protocol.
