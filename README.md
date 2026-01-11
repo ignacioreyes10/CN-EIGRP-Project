@@ -1,5 +1,5 @@
 # EIGRP Load Balancing and Redundancy Setup
-Team Members: [Tu Nombre] & Ignacio [Apellido]
+Team Members: Javier Muela and Ignacio Reyes del Toro
 
 ## Introduction
 
