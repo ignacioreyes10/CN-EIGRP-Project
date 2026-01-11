@@ -1,4 +1,5 @@
 # EIGRP Load Balancing and Redundancy Setup
+Team Members: [Tu Nombre] & Ignacio [Apellido]
 
 ## Introduction
 
@@ -16,3 +17,15 @@ We have designed a diamond-shaped redundant topology to evaluate EIGRP's perform
 
 Interface Mapping and Verification:
 To ensure network consistency, we strictly followed a predefined port-mapping scheme. The core router (R1) distributes traffic through GigabitEthernet 0/1 to the upper path (R2) and through GigabitEthernet 0/2 to the lower path (R3). This physical segmentation is crucial for EIGRP to identify multiple valid paths to the destination network (192.168.40.0/24). All interfaces have been manually addressed and enabled, establishing the physical foundation for the dynamic routing protocol.
+
+Here are the execution instructions for anyone reading:
+
+  1. Launch the Environment: Open the provided .pkt file in Cisco Packet Tracer within the Ubuntu VM.
+
+  2. API Readiness: Ensure the "External Network Access" is enabled in Packet Tracer settings to allow the Python script to communicate with the simulation.
+
+  3. Run Automation: Open the Linux Terminal and execute the script: python3 configure_eigrp.py.
+
+  4. Observation: Watch the Command Line Interface (CLI) of the routers. The teacher will see the EIGRP configurations being applied automatically in real-time.
+
+  5. Validation: Once the script finishes, perform a ping between PC-A and PC-B to verify end-to-end connectivity.
